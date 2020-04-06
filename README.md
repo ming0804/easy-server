@@ -1,4 +1,16 @@
-## 一：单表sql操作
+##简单的小应用
+#部署
+```
+    1:到releases下载快照版
+    2：把mmm_dev.sql注入到自己的mysql数据库中
+    3：根据自己的数据库环境配置conf.properties文件
+    4：启动java -jar my-server-1.0-jar-with-dependencies.jar
+        更换端口启动 java -jar my-server-1.0-jar-with-dependencies.jar -port=8080
+    5：默认端口80  则可用ip访问 
+    6：注意事项 很多服务需要在添加过centos服务器之后才可使用
+```
+ 
+## [一：单表sql操作](#1)
 ## 二：多表sql操作
 ## 三：ktor方法
 ## 四：基本代码生成器
@@ -9,31 +21,44 @@
 ## 六：o命令快捷工具
 ## [last：小工具](#last)
 
+#### 操作sql
+```操作sql的时候 需要先初始化sql作用域
+    1：无事务作用域 doMapper 
+       参数有三 database 可不填 不填是使用全局数据库的配置
+       isolationLevel事务等级 值为TransactionIsolationLevel.READ_UNCOMMITTED 等 默认读提交
+        {}事务中业务逻辑
+       doMapper { 
+       业务逻辑    
+       }
+       doMapper(object :DataBase{
+           override var baseDataUrl: String
+               get() = "数据库连接地址"
+               set(value) {}
+           override var baseDataUserName: String
+               get() = "用户名"
+               set(value) {}
+           override var baseDataPassword: String
+               get() = "密码"
+               set(value) {}
+    
+       }, TransactionIsolationLevel.READ_UNCOMMITTED.level ) { 
+            业务逻辑
+        }
+        在使用database参数的时候是不走连接池的
+    2：事务作用域 doMapperTra 方式如上
+    3：继承上层sql作用域 doSuMapper  封装通用函数使用 
+操作sql方法
 
-sdfsaf
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
-# dd
+
+```
+
+
+
+
+
+
+
+
 
 
 
