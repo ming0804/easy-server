@@ -6,7 +6,7 @@
     3：根据自己的数据库环境配置conf.properties文件
     4：启动java -jar my-server-1.0-jar-with-dependencies.jar
         更换端口启动 java -jar my-server-1.0-jar-with-dependencies.jar -port=8080
-    5：默认端口80  则可用ip访问 
+    5：默认端口80  则可用ip访问 用户名 超级用户 密码 111111
     6：注意事项 很多服务需要在添加过centos服务器之后才可使用
 ```
 
