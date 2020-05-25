@@ -1,7 +1,7 @@
 ##简单的小应用
 #部署
 ```
-    1:到releases下载快照版
+    1:到releases下载最新版
     2：把mmm_dev.sql注入到自己的mysql数据库中
     3：根据自己的数据库环境配置conf.properties文件
     4：启动java -jar my-server-1.0-jar-with-dependencies.jar
@@ -20,13 +20,13 @@ https://mp.csdn.net/console/editor/html/105342081
 
 ```
 
-#0.0.2最终版
+#0.0.2最终版（已发布）
 ```
     1：nginx配置参数的自定义
     2：简易版的分布式任务调度
 
 ```
- #0.0.3最终版
+ #0.0.3最终版（jar包部署已发布）
  ```
      1：jar包部署的任务定时
      2：git的自动化任务定时部署
