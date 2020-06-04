@@ -1,6 +1,7 @@
 ##简单的小应用
 #部署
 ```
+    java环境最低jdk1.8
     1:到releases下载最新版
     2：把mmm_dev.sql注入到自己的mysql数据库中
     3：根据自己的数据库环境配置conf.properties文件
@@ -11,6 +12,11 @@
 ```
 ##模块介绍
 https://mp.csdn.net/console/editor/html/105342081
+
+体验环境 http://mingming.work/
+账号：测试用户
+密码：111111
+只有查看权限
 
 ##目标
 
