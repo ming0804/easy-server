@@ -47,7 +47,7 @@ https://mp.csdn.net/console/editor/html/105342081
   
  
  
-## [一：单表sql操作](#1)
+## [一：单表sql操作](#one)
 ## 二：多表sql操作
 ## 三：ktor方法
 ## 四：基本代码生成器
@@ -58,7 +58,7 @@ https://mp.csdn.net/console/editor/html/105342081
 ## 六：o命令快捷工具
 ## [last：小工具](#last)
 
-#### 操作sql
+#### <span id="one">操作sql<span>
 ```操作sql的时候 需要先初始化sql作用域
     1：无事务作用域 doMapper 
        参数有三 database 可不填 不填是使用全局数据库的配置
